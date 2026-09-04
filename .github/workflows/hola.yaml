@@ -1,0 +1,21 @@
+name: Hola mundo
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  hola: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "Hola mundo"
+      - name: Descargar codigo
+        uses: actions/checkout@v4 
+      - name: En que carpeta estoy
+        run: pwd
+      - name: Contenido de la carpeta
+        run: ls -la
+      - name: Instalar node
+        uses: actions/setup-node@v4
+      - name: verificar node
+        run: node --version
+    

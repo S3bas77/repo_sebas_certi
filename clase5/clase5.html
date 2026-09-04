@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                flex-direction: column ;
+                margin: 20px auto;
+            }
+            label {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Clase 5</h1>
+        <p style="text-align: center;"> Elige tu favor de clase:</p>
+        <P style="text-align: center;"> este es un documento donde aprenderé a usar la etiqueta fieldset</P>
+        <form>
+            <fieldset>
+                <legend>Modalidad de clase</legend>
+                <label for=" presencial">
+                    <input type = "radio" value="presencial" name="modalidad" id="presencial">
+                    Presencial
+                </label>
+                <label for=" virtual">
+                    <input type = "radio" value="virtual" name="modalidad" id="virtual">
+                    Virtual
+                </label>
+                <label for="turno"> 
+                    <select name="turno" id="tunro">
+                        <option value="A"> turno A</option>
+                        <option value="B"> turno B</option>
+                        <option value="C"> turno C</option>
+                    </select>
+                    Turno: 
+            </fieldset>
+            <br>
+            </label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" placeholder="Ingrese su comentario" title="Ingrese su comentario"></textarea>
+            <br> 
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Limpiar </button>
+            <button type="button"> Botón </button>
+        </form>
+        <form action="/guardar" method="post">
+            <label for="nombre"> Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" />
+            <button type="submit"> Enviar </button>
+
+        </form>
+    </body>

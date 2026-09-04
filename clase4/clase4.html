@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px 16px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            flex-direction: column ;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clase 4</h1>
+    <table>
+        <caption>Horario de clases</caption> <!-- sirve para poner titulo o descripcion  --> 
+        <thead> 
+<!-- columna --> <tr> <th>llave</th> <th>valor</th> <!-- cabeceras --> </tr>
+                 <tr> <td>Ciudad</td> <td>La Paz</td> </tr>
+<!-- formularios son: form, input, select, textarea, button, submit, reset, file y son muytiles para recoger información del usuario -->
+                 <tr> <td>Nombre</td> <td>Leonardo Carrillo</td> </tr>
+                 <tr> <td>Apellido</td> <td>Carrillo</td> </tr>
+        </thead>
+        <tbody>
+            <tr> <td>Universidad</td> <td>UPB</td> </tr>
+        </tbody>
+    </table>
+    <form> 
+        <br>
+        <label> nombre:  </label> <!-- entrada de datos -->
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" />
+        <br>
+        <label> correo: </label>
+        <input type="email" name="correo" id="correo" placeholder="Ingrese su correo" />
+        <br>
+        <label> telefono: </label>
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono" />
+        <br>    
+        <label> edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" />
+        <br>    
+        <label> Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese su fecha de nacimiento" />
+        <br>    
+        <label> Password: </label>
+        <input type="password" name="password" id="password" placeholder="Ingrese su password" />
+        <br>    
+        <label> Código: </label>
+        <input type="text" name="codigo" id="codigo" placeholder="Ingrese su código" inputmode = "numeric" pattern="[0-9]{6}" maxlength="6"/>
+        <br>    
+    </form>
+</body>
+</html>

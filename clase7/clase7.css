@@ -1,0 +1,31 @@
+
+.parrafo {
+    color: red; 
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.letra {
+    font-family: Ubuntu, sans-serif;
+}
+.verde {
+    background-color: rgb(164, 218, 164);
+}
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:  blue; 
+}
+input[required] {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(192, 189, 189);
+}

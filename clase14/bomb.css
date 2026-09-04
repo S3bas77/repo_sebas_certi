@@ -1,0 +1,38 @@
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+th {
+    border: 2px solid gray;
+    padding: 10px 16px;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+
+}
+td {
+    border: 2px solid gray;
+    padding: 10px 16px;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    color: transparent;
+    background-color: #555;
+    cursor: pointer;
+    user-select: none;
+}
+td.revelada {
+    color: inherit;
+    background-color: #ccc;
+    cursor: default;
+}
+td.pared-alrededor {
+    color: inherit;
+    background-color: #333;
+}
+td.exploto {
+    color: inherit;
+    background-color: #ff4c4c;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>decimo septima pagina web</h1>  
+        <section id="root"></section>
+        <script type="module"> 
+            import React from 'https://esm.sh/react@19.2.8'
+            import { createRoot } from 'https://esm.sh/react-dom@19.2.8/client'
+            const contenedor = document.querySelector('#root')
+            const root = createRoot(contenedor); 
+            function TresEnRaya(){
+                return React.createElement(
+                    'section', {className: 'Juego'}, 
+                    'Hola',
+                    React.createElement('h1', null, 'Tres en Raya'), 
+                    React.createElement('p', null, 'Jugar con tu amigo'),
+                    React.createElement('p', null, 'Jugar con tu amigo'));
+
+            }
+            root.render(React.createElement(TresEnRaya))
+            console.log(React)
+            console.log(createRoot)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+/* efecto hover selectores, mueves el mouse y recien se aplican los cambios*/
+
+.mensaje:hover{
+    background-color: navy;
+    color: rgb(255, 66, 25); 
+    height: 100px; 
+    font-family: system-ui, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+input:focus {
+    background-color: gray;
+}
