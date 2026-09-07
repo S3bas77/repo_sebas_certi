@@ -1,6 +1,5 @@
 
 import './App.css'
-import Reloj from './Reloj'
 import SpaceInvader from './SpaceInvader'
 
 function App() {
